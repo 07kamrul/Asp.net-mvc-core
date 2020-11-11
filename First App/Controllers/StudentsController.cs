@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using First_App.Manager;
 using First_App.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,14 +20,19 @@ namespace First_App.Controllers
 
         public ActionResult SaveStudent()
         {
+            StudentManager studentManager = new StudentManager();
+            ViewBag.Department = studentManager.GetDepartments();
+            ViewBag.Students = studentManager.GetStudents();
 
-            ViewBag.Department = GetDepartment();
             return View();
+
         }
         [HttpPost]
 
         public ActionResult SaveStudent(Student student)
         {
+            StudentManager studentManager = new StudentManager();
+
             string msg = "";
             var name = student.Name;
             var regno = student.RegNo;
@@ -38,7 +44,7 @@ namespace First_App.Controllers
             SqlConnection conn = new SqlConnection("Server=DESKTOP-HLUSD4J;Database=FirstApp;Trusted_Connection=True;");
             conn.Open();
 
-            string query = "INSERT INTO STUDENT (name,regno,email,address,department)VALUES('" + name + "','" + regno + "','" + email + "','" + address + "','" + dept+ "')";
+            string query = "INSERT INTO STUDENT (Name,RegNo,Email,Address,DepartmentId)VALUES('" + name + "','" + regno + "','" + email + "','" + address + "','" + dept+ "')";
 
             SqlCommand cmd = new SqlCommand(query, conn);
 
@@ -53,7 +59,8 @@ namespace First_App.Controllers
                 msg = "Saved failed";
 
             }
-            ViewBag.Department = GetDepartment();
+            ViewBag.Department = studentManager.GetDepartments();
+            ViewBag.Students = studentManager.GetStudents();
             ViewBag.Message = msg;
 
             return View();
@@ -75,14 +82,14 @@ namespace First_App.Controllers
             return View();
         }
 */
-        public ActionResult GetAll()
+/*        public ActionResult GetAll()
         {
          //   ViewBag.Students = Students();
 
             return View(Students());
-        }
+        }*/
 
-        public List<string>GetDepartment()
+/*        public List<string>GetDepartment()
         {
             return new List<string> { "CSE", "EEE", "ECE" };
         }
@@ -91,10 +98,10 @@ namespace First_App.Controllers
         {
             return new List<Student>
             {
-                new Student{Name="Kamrul", RegNo="2021", Email="kamrulhasan@gmail.com", Address="Mirpur", Department="CSE"},
-                new Student{Name="Hasan", RegNo="2021", Email="hasan@gmail.com", Address="Mirpur Dhaka", Department="IT"}
+                new Student{Name="Kamrul", RegNo="2021", Email="kamrulhasan@gmail.com", Address="Mirpur", Department=1},
+                new Student{Name="Hasan", RegNo="2021", Email="hasan@gmail.com", Address="Mirpur Dhaka", Department=2 }
         };
-        }
+        }*/
 
     }
 }

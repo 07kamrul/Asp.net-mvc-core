@@ -14,7 +14,12 @@ namespace First_App.Manager
 
         public List<Student>GetStudents()
         {
-            return studentGateway.GetS
+            return studentGateway.GetStudents();
+        }
+
+        public List<Department>GetDepartments()
+        {
+            return studentGateway.GetDepartments();
         }
     }
 }

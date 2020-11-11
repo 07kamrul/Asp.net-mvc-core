@@ -12,34 +12,61 @@
 <h2>Save Student Form</h2>
 <h3>@ViewBag.Message</h3>
 
-@using(Html.BeginForm(FormMethod.Post))
+@using (Html.BeginForm(FormMethod.Post))
 {
-<table>
-    <tr>
-        <td>@Html.LabelFor(c => c.Name)</td>
-        <td>@Html.TextBoxFor(c => c.Name) </td>
-    </tr>
-    <tr>
-        <td>@Html.LabelFor(c => c.RegNo)</td>
-        <td>@Html.TextBoxFor(c => c.RegNo) </td>
-    </tr>
-    <tr>
-        <td>@Html.LabelFor(c => c.Email)</td>
-        <td>@Html.TextBoxFor(c => c.Email) </td>
-    </tr>
-    <tr>
-        <td>@Html.LabelFor(c => c.Address)</td>
-        <td>@Html.TextBoxFor(c => c.Address) </td>
-    </tr>
-    <tr>
-        <td>@Html.LabelFor(c => c.Department)</td>
-        <td>@Html.DropDownListFor(c => c.Department, new SelectList(ViewBag.Department),"---Select---", new { @class = "form-control" }) </td>
-    </tr>
+    <table>
+        <tr>
+            <td>@Html.LabelFor(c => c.Name)</td>
+            <td>@Html.TextBoxFor(c => c.Name) </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(c => c.RegNo)</td>
+            <td>@Html.TextBoxFor(c => c.RegNo) </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(c => c.Email)</td>
+            <td>@Html.TextBoxFor(c => c.Email) </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(c => c.Address)</td>
+            <td>@Html.TextBoxFor(c => c.Address) </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(c => c.Department)</td>
+            <td>@Html.DropDownListFor(c => c.Department, new SelectList(ViewBag.Department,"Id","ShortName"), "---Select---", new { @class = "form-control" }) </td>
+        </tr>
 
-    <tr>
-        <td></td>
-        <td><input type="submit" value="Save" /></td>
-    </tr>
-</table>
-     
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save" /></td>
+        </tr>
+    </table>
+
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>RegNo</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+
+        @foreach (var item in ViewBag.Students)
+
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.RegNo</td>
+                <td>@item.Email</td>
+                <td>@item.Address</td>
+                <td>@item.Department</td>
+
+            </tr>
+        }
+
+    </table>
+
 }

@@ -13,7 +13,7 @@ namespace First_App.Gateway
         public List<Student> GetStudents()
         {
             SqlConnection conn = new SqlConnection("Server=DESKTOP-HLUSD4J;Database=FirstApp;Trusted_Connection=True;");
-            string query = "SELECT * FROM student";
+            string query = "SELECT * FROM vStudentInfo";
 
             SqlCommand cmd = new SqlCommand(query, conn);
             conn.Open();
@@ -28,12 +28,35 @@ namespace First_App.Gateway
                 student.RegNo = reader["RegNo"].ToString();
                 student.Email = reader["Email"].ToString();
                 student.Address = reader["Address"].ToString();
-                student.Department = reader["Department"].ToString();
+                student.Department = reader["DepartmentName"].ToString();
                 students.Add(student);
 
             }
             conn.Close();
             return students;
+        }
+
+        public List<Department> GetDepartments()
+        {
+            SqlConnection conn = new SqlConnection("Server=DESKTOP-HLUSD4J;Database=FirstApp;Trusted_Connection=True;");
+            string query = "SELECT * FROM Department";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            List<Department> departments = new List<Department>();
+
+            while(reader.Read())
+            {
+                Department department = new Department();
+                department.Id = (int)reader["Id"];
+                department.ShortName = reader["ShortName"].ToString();
+                departments.Add(department);
+            }
+            conn.Close();
+            return departments;
+
         }
     }
 }
