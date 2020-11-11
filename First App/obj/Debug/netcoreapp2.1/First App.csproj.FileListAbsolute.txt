@@ -1,0 +1,39 @@
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\appsettings.Development.json
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\appsettings.json
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First App.deps.json
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First App.runtimeconfig.json
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First App.runtimeconfig.dev.json
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First App.dll
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First App.pdb
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First App.Views.dll
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First App.Views.pdb
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.AssemblyInfoInputs.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.AssemblyInfo.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.csproj.CoreCompileInputs.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.RazorAssemblyInfo.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.RazorAssemblyInfo.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.TagHelpers.input.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.TagHelpers.output.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.RazorCoreGenerate.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.RazorTargetAssemblyInfo.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.RazorTargetAssemblyInfo.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.Views.pdb
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.dll
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.pdb
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.genruntimeconfig.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.csproj.CopyComplete
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Students\Index.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Students\GetAll.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Students\SaveStudent.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First App.csprojAssemblyReference.cache

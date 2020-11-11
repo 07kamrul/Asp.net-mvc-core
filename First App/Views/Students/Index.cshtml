@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{ 
+    <h2>Name : @ViewBag.Student.Name</h2> 
+    <h2>RegNo: @ViewBag.Student.RegNo</h2> 
+    <h2>Email: @ViewBag.Student.Email</h2> 
+    <h2>Address: @ViewBag.Student.Address</h2> 
+    <h2>Department: @ViewBag.Student.Department</h2> 
+}
+
+@*
+@for (int i=0; i<5; i++)
+{
+    <h2>University</h2>
+}
+*@

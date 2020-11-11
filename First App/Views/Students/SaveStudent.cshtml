@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model First_App.Models.Student
+
+@{
+
+    ViewData["Title"] = "SaveStudent";
+}
+
+<h2>Save Student Form</h2>
+<h3>@ViewBag.Message</h3>
+
+@using(Html.BeginForm(FormMethod.Post))
+{
+<table>
+    <tr>
+        <td>@Html.LabelFor(c => c.Name)</td>
+        <td>@Html.TextBoxFor(c => c.Name) </td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(c => c.RegNo)</td>
+        <td>@Html.TextBoxFor(c => c.RegNo) </td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(c => c.Email)</td>
+        <td>@Html.TextBoxFor(c => c.Email) </td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(c => c.Address)</td>
+        <td>@Html.TextBoxFor(c => c.Address) </td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(c => c.Department)</td>
+        <td>@Html.DropDownListFor(c => c.Department, new SelectList(ViewBag.Department),"---Select---", new { @class = "form-control" }) </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Save" /></td>
+    </tr>
+</table>
+     
+}
