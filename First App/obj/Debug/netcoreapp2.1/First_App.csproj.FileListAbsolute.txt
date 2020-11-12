@@ -10,7 +10,6 @@ F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First_App.Views.
 F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\First_App.Views.pdb
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.AssemblyInfoInputs.cache
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.AssemblyInfo.cs
-F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.csproj.CoreCompileInputs.cache
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.RazorAssemblyInfo.cache
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.RazorAssemblyInfo.cs
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.TagHelpers.input.cache
@@ -36,3 +35,12 @@ F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.dll
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.pdb
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.genruntimeconfig.cache
 F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.csproj.CopyComplete
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.csprojAssemblyReference.cache
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\First_App.csproj.CoreCompileInputs.cache
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.json
+F:\Asp.Net\Tutorial\First App\First App\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Create.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Delete.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Details.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Edit.cshtml.g.cs
+F:\Asp.Net\Tutorial\First App\First App\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Index.cshtml.g.cs

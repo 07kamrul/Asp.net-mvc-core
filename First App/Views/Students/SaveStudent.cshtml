@@ -16,24 +16,25 @@
 {
     <table>
         <tr>
-            <td>@Html.LabelFor(c => c.Name)</td>
-            <td>@Html.TextBoxFor(c => c.Name) </td>
+            <td>@Html.LabelFor(expression:c => c.Name)</td>
+            <td>@Html.TextBoxFor(expression:c => c.Name, htmlAttributes: new { @class = "form-control"}) </td>
+            <td>@Html.ValidationMessageFor(expression: c => c.Name)</td>
         </tr>
         <tr>
-            <td>@Html.LabelFor(c => c.RegNo)</td>
-            <td>@Html.TextBoxFor(c => c.RegNo) </td>
+            <td>@Html.LabelFor(expression:c => c.RegNo)</td>
+            <td>@Html.TextBoxFor(expression: c => c.RegNo, htmlAttributes: new { @class = "form-control" })  </td>
         </tr>
         <tr>
-            <td>@Html.LabelFor(c => c.Email)</td>
-            <td>@Html.TextBoxFor(c => c.Email) </td>
+            <td>@Html.LabelFor(expression:c => c.Email)</td>
+            <td>@Html.TextBoxFor(expression:c => c.Email, htmlAttributes: new { @class = "form-control"})  </td>
         </tr>
         <tr>
-            <td>@Html.LabelFor(c => c.Address)</td>
-            <td>@Html.TextBoxFor(c => c.Address) </td>
+            <td>@Html.LabelFor(expression:c => c.Address)</td>
+            <td>@Html.TextBoxFor(expression:c => c.Address, htmlAttributes: new { @class = "form-control"}) </td>
         </tr>
         <tr>
-            <td>@Html.LabelFor(c => c.Department)</td>
-            <td>@Html.DropDownListFor(c => c.Department, new SelectList(ViewBag.Department,"Id","ShortName"), "---Select---", new { @class = "form-control" }) </td>
+            <td>@Html.LabelFor(expression:c => c.Department)</td>
+            <td>@Html.DropDownListFor(expression:c => c.Department, new SelectList(ViewBag.Department,"Id","ShortName"), "---Select---", new { @class = "form-control" }) </td>
         </tr>
 
         <tr>

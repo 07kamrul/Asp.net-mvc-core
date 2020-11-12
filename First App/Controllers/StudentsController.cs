@@ -40,25 +40,29 @@ namespace First_App.Controllers
             var address = student.Address;
             var dept = student.Department;
 
-
-            SqlConnection conn = new SqlConnection("Server=DESKTOP-HLUSD4J;Database=FirstApp;Trusted_Connection=True;");
-            conn.Open();
-
-            string query = "INSERT INTO STUDENT (Name,RegNo,Email,Address,DepartmentId)VALUES('" + name + "','" + regno + "','" + email + "','" + address + "','" + dept+ "')";
-
-            SqlCommand cmd = new SqlCommand(query, conn);
-
-            int rowCount = cmd.ExecuteNonQuery();
-
-            if(rowCount > 0)
+            if(ModelState.IsValid)
             {
-                msg = "Save data successfully";
-            }
-            else
-            {
-                msg = "Saved failed";
+                SqlConnection conn = new SqlConnection("Server=DESKTOP-HLUSD4J;Database=FirstApp;Trusted_Connection=True;");
+                conn.Open();
 
+                string query = "INSERT INTO STUDENT (Name,RegNo,Email,Address,DepartmentId)VALUES('" + name + "','" + regno + "','" + email + "','" + address + "','" + dept + "')";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                int rowCount = cmd.ExecuteNonQuery();
+
+                if (rowCount > 0)
+                {
+                    msg = "Save data successfully";
+                }
+                else
+                {
+                    msg = "Saved failed";
+
+                }
             }
+
+           
             ViewBag.Department = studentManager.GetDepartments();
             ViewBag.Students = studentManager.GetStudents();
             ViewBag.Message = msg;
